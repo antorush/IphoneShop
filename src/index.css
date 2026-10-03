@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-Inter:"Inter", sans-serif;
+  --text-sizePrimary:16px;
+  --text-h1Size:96px;
+  --text-h3Size:25px;
+  --color-InputBg:#F5F5F5;
+  --color-HeroBg:#2E1F38;
+  --text-alter:18px;
+
+}
+
+@layer base{
+  body{
+    @apply  w-full h-screen bg-white overflow-x-hidden font-Inter text-sizePrimary font-medium;
+  }
+  *,*::after,*::before{
+    @apply p-0 m-0 box-border;
+  }
+}
+
+@layer components{
+  .HeaderInput{
+    @apply block w-full p-4 rounded-[8px] bg-InputBg;
+  }
+
+  .HeroBg{
+    @apply block bg-linear-to-l from-HeroBg to-black/90 w-full h-[632px];
+  }
+
+  .Heading1{
+    @apply text-h1Size font-semibold leading-[72px];
+  }
+
+  .Heading3{
+    @apply text-h3Size font-semibold leading-8;
+  }
+  .text{
+    @apply text-alter font-medium leading-6;
+  }
+}
