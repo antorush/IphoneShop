@@ -1,7 +1,9 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
 import { header } from "../data/data";
-
+import Footer from "../components/Footer/Footer";
+import { footerData } from "../data/data";
+import { Socials } from "../data/data";
 const RootLayout = () => {
   return (
     <div>
@@ -9,7 +11,7 @@ const RootLayout = () => {
       <main>
         <Outlet />
       </main>
-      <footer>&copy 2026</footer>
+      <Footer items={footerData} socials={Socials} />
     </div>
   );
 };

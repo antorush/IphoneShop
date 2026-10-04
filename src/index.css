@@ -9,7 +9,10 @@
   --color-InputBg:#F5F5F5;
   --color-HeroBg:#2E1F38;
   --text-alter:18px;
-
+  --color-grayText:#CFCFCF;
+  --color-bannerBg:#EDEDED;
+  --color-bannerText:#909090;
+  --color-bannerBgAlter:#353535;
 }
 
 @layer base{
@@ -39,5 +42,9 @@
   }
   .text{
     @apply text-alter font-medium leading-6;
+  }
+
+  .footerText{
+    @apply text-sm text-grayText/40 
   }
 }
