@@ -20,3 +20,11 @@ export type TSocial = {
   icon: string;
   name?: string;
 };
+
+
+export type TCategory={
+  id:string|number,
+  icon:string,
+  name:string,
+  href:string,
+}

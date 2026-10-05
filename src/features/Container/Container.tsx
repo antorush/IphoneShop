@@ -18,7 +18,7 @@ const Container: React.FC<IContainer> = ({
     maxWidth == undefined || maxWidth == null ? "1440" : maxWidth;
   return (
     <div
-      className={`block mx-0 h-auto ${className}`}
+      className={`block mx-auto h-auto ${className}`}
       style={{ padding: `0px ${isPadding}px`, maxWidth: `${isMaxWidth}px` }}
     >
       {children}

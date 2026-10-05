@@ -1,8 +1,15 @@
-import type { FooterSection, THeader, TSocial } from "../types/types";
+import type { FooterSection, TCategory, THeader, TSocial } from "../types/types";
 import facebook from "../assets/icons/socials/Facebook.svg";
 import twitter from "../assets/icons/socials/Twitter.svg";
 import instagram from "../assets/icons/socials/Instagram.svg";
 import tiktok from "../assets/icons/socials/Tiktok.svg";
+import phones from "../assets/icons/categories/Phones.svg";
+import smart from "../assets/icons/categories/SmartWatches.svg";
+import camera from "../assets/icons/categories/Cameras.svg";
+import headphones  from "../assets/icons/categories/Headphones.svg";
+import computers from "../assets/icons/categories/Computers.svg";
+import gaming from "../assets/icons/categories/Gaming.svg";
+
 
 // например, '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
 export const header: THeader[] = [
@@ -68,3 +75,38 @@ export const Socials: TSocial[] = [
     name: "instagram",
   },
 ];
+
+
+export const categoryList:TCategory[]=[{
+  id:"category_"+Math.random()*100,
+  icon:phones,
+  name:'Phones',
+  href:'phones'
+},{
+  id:"category_"+Math.random()*100,
+  icon:smart,
+  name:'Smart Watches',
+  href:'smartwatches'
+},{
+  id:"category_"+Math.random()*100,
+  icon:camera,
+  name:'Cameras',
+  href:'cameras'
+},{
+  id:"category_"+Math.random()*100,
+  icon:headphones,
+  name:'Headphones',
+  href:'headphones'
+},{
+  id:"category_"+Math.random()*100,
+  icon:computers,
+  name:'Computers',
+  href:'computers'
+},
+{
+  id:"category_"+Math.random()*100,
+  icon:gaming,
+  name:'Gaming',
+  href:'/gaming'
+},
+]
