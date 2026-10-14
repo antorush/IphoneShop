@@ -7,7 +7,7 @@ import CustomBtn from "../../features/CustomBtn/CustomBtn";
 const Banners = () => {
   return (
     <section>
-      <div className="flex justify-center items-center flex-1 w-full max-h-[600px]">
+      <div className="flex justify-center items-center flex-1 w-full h-[600px]">
         <div className="w-1/2 grid grid-cols-2 grid-rows-1">
           {Array.from({ length: 3 }).map((_, index) => (
             <div
@@ -59,8 +59,8 @@ const Banners = () => {
             </div>
           ))}
         </div>
-        <div className="block bg-bannerBg w-1/2">
-          <div className="pl-[56px] py-12 flex justify-center items-center">
+        <div className="block bg-bannerBg w-1/2 relative h-full">
+          <div className="pl-[56px] py-12 flex justify-between items-center">
             <div className="block max-w-[360px]">
               <h2 className="text-[64px] leading-[56px] font-semibold">
                 <span className="font-thin">Macbook</span> Air
@@ -71,7 +71,7 @@ const Banners = () => {
               </p>
               <CustomBtn>Shop Now</CustomBtn>
             </div>
-            <img src={macbook} alt="" />
+            <img src={macbook} alt="" className="" />
           </div>
         </div>
       </div>

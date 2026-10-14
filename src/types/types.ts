@@ -28,3 +28,18 @@ export type TCategory={
   name:string,
   href:string,
 }
+export interface Product {
+    id: number;
+    name: string;
+    price: number;
+    category: "New Arrival" | "Bestseller" | "Featured Products" | string;
+    image: string;
+    favorite: boolean;
+    inStock: boolean;
+    description?: string;
+}
+
+export interface ProductsResponse {
+    count: number;
+    products: Product[];
+}

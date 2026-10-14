@@ -8,8 +8,6 @@ interface IContainer {
 
 const Container: React.FC<IContainer> = ({
   maxWidth = "1440",
-  style,
-  className,
   padding = "30",
   children,
 }) => {
@@ -18,8 +16,8 @@ const Container: React.FC<IContainer> = ({
     maxWidth == undefined || maxWidth == null ? "1440" : maxWidth;
   return (
     <div
-      className={`block mx-auto h-auto ${className}`}
-      style={{ padding: `0px ${isPadding}px`, maxWidth: `${isMaxWidth}px` }}
+      className={`block h-auto`}
+      style={{ padding: `0px ${isPadding}px`, maxWidth: `${isMaxWidth}px`, margin:'0px auto' }}
     >
       {children}
     </div>
